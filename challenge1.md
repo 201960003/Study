@@ -1,4 +1,4 @@
-# <Strong>도전문제<strong>
+# <Strong> 혼자 공부하는 파이썬 도전문제1 <strong>
 
 1. 구의 부피와 겉넓이
 
