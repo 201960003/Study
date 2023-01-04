@@ -100,13 +100,11 @@ print("B 지점: ",string.upper())
 
 ```python
 string="hello"
-a = string.upper()
-print("A 지점: ",a)
+string = string.upper()
+print("A 지점: ",string)
 ```
 
     A 지점:  HELLO
     
 
-파이썬은 인터프리터로 한줄씩 처리를 한다. 그래서 string="hello",
-a = string.upper()두줄까지는 대문자로 나오는데 3번째줄에 안나오는 이유가 그 이유다.
-A 지점도 대문자로 뱐경하고 싶다면 2번째줄에 변수를 지정해준 후, 3번째 줄에 변수를 넣어주면 된다.
+변수를 지정하면 대문자로 출력이 된다.
