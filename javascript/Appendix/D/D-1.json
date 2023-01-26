@@ -1,0 +1,8 @@
+{
+    "name": "booklocal",
+    "description": "Local Module Test",
+    "version": "0.0.1",
+    "author": { "name": "RintIanTta" },
+    "main": "local.js",
+    "engines": { "node": "*" }
+}

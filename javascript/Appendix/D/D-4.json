@@ -1,0 +1,15 @@
+{
+	"name": "nmt",
+		"description" : "Node Module Test",
+		"version" : "0.0.1",
+		"author" : {
+		"name": "AAkAha RintIanTta"
+	},
+	"dependencies" : { },
+		"bin" : {
+		"nmt": "./nmt"
+	},
+	"engines" : {
+		"node": "*"
+	}
+}
