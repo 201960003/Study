@@ -26,7 +26,12 @@
 
     function displayTime(){        
       
-      // window.open() 메서드를 사용해서 current.html 파일을 팝업 창으로 표시하세요.
+      var left = (screen.availWidth - 400) / 2;
+      var top = (screen.availHeight - 200) / 2;
+      var opt = "left=" + left + ",top=" + top + ",width=" + 400 + ",height=" + 200;
+      window.open("current.html", "time", opt);
+      //window.open("current.html", "pop", 'width = 400, height = 200');
+            // window.open() 메서드를 사용해서 current.html 파일을 팝업 창으로 표시하세요.
       // 팝업 창은 화면 중앙에 표시합니다.
 
     }
