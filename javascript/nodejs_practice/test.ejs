@@ -1,0 +1,30 @@
+<% var name = 'haneul'; %>
+
+<h1><%= name %></h1>
+<p>나는 지금 자바스크립트를 공부하고 있다.</p>
+<hr />
+
+<%# for (var i = 0; i < 10; i++) { %>
+   <%# <h2>나는 지금 ejs 모듈을 공부하고 있다.</br>그치만 어렵다.</h2> %>      
+<%# } %>
+
+
+<%for (var i = 0; i < 10; i++) {
+    if (i === 0) {%>
+        <h2 style="color:red" >나는 지금 ejs 모듈을 공부하고 있다.</br>그치만 어렵다.</h2>
+    <% } else if ( i === 1 ) { %>
+        <h2 style="color:orange" >나는 지금 ejs 모듈을 공부하고 있다.</br>그치만 어렵다.</h2>
+    <%} else if (i === 2) {%>
+        <h2 style="color:yellow" >나는 지금 ejs 모듈을 공부하고 있다.</br>그치만 어렵다</h2>
+    <% } else if ( i === 3 ) {%> 
+        <h2 style="color:green" >나는 지금 ejs 모듈을 공부하고 있다.</br>그치만 어렵다.</h2>
+    <% } else if ( i === 4 ) {%> 
+        <h2 style="color:blue" >나는 지금 ejs 모듈을 공부하고 있다.</br>그치만 어렵다.</h2>
+    <% } else if (i === 5) {%>
+        <h2 style="color:navy" >나는 지금 ejs 모듈을 공부하고 있다.</br>그치만 어렵다</h2>
+    <% } else if ( i === 6 ) {%> 
+        <h2 style="color:purple" >나는 지금 ejs 모듈을 공부하고 있다.</br>그치만 어렵다.</h2>
+    <% } else {%>
+        <h2 style="color:magenta" >나는 지금 ejs 모듈을 공부하고 있다.</br>그치만 어렵다.</h2>
+    <% }
+} %>
