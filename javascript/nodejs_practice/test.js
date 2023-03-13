@@ -3,6 +3,11 @@ var http = require('http');
 var fs = require('fs');
 var ejs = require('ejs');
 
+// var colors = ['#ff0000', '#ffa500'];
+
+// , yellow, green, blue, navy, purple
+
+
 // 서버를 생성하고 실행합니다.
 http.createServer(function (request, response) {
     // ejsPage.ejs 파일을 읽습니다.
@@ -12,14 +17,17 @@ http.createServer(function (request, response) {
             '<head><meta charset="UTF-8"></head>'
         );
         response.end(ejs.render(data, {
-            description: '어떤 설명을 넣어야할지 모르겠다....'
+            colors: [
+                'color:red;',
+                'color:orange;',
+                'color:yellow;',
+                'color:green;',
+                'color:blue;',
+                'color:navy;',
+                'color:purple;'
+            ]
         }));
     });
-
-    fs.readFile('test.ejs','utf8',function (error, data) {
-    });
-
-
-}).listen(52273, function() {
-    console.log('Server Running at http://127.0.0.1:52273');
+}).listen(52274, function() {
+    console.log('Server Running at http://127.0.0.1:52274');
 });

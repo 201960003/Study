@@ -11,7 +11,7 @@ var app = express();
 
 // 미들웨어를 설정합니다.
 app.use(cookieParser());
-app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.urlencoded({ extended: false }));
 
 // 라우터를 설정합니다.
 app.get('/', function (request, response) {});
@@ -25,7 +25,7 @@ app.listen(52273, function() {
 
 
 
-// 로그인 실행
+// 로그인 구현
 
 // 라우터를 설정합니다.
 app.get('/', function(request, response){
